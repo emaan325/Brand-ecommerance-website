@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="product-details.css">
+</head>
+<body>
+   <!-- Header Section -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="logo-symbol.svg" alt="Brand Logo" class="logo-icon">
+                    <span class="logo-text">Brand</span>
+                </a>
+            </div>
+            <div class="header-center">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <select class="category-select">
+                        <option>All category</option>
+                        <option>Electronics</option>
+                        <option>Home & Outdoor</option>
+                    </select>
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="profile.html" class="header-action">
+                    <img src="profile.svg" alt="Profile">
+                    <span>Profile</span>
+                </a>
+                <a href="product-details.html" class="header-action">
+                    <img src="heart.svg" alt="Message">
+                    <span>Message</span>
+                </a>
+                <a href="product-listing.html" class="header-action">
+                    <img src="orders.svg" alt="Orders">
+                    <span>Orders</span>
+                </a>
+                <a href="cart.html" class="header-action">
+                    <img src="cart.svg" alt="Cart">
+                    <span>My cart</span>
+                </a>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container header-bottom-container">
+                <nav class="main-nav" style="display: flex; align-items: center; gap: 24px;">
+  <button class="category-toggle" style="display: flex; align-items: center; gap: 8px; padding: 10px 12px; background: #0D6EFD; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
+    <span class="hamburger-icon" style="width: 20px; height: 2px; background: white; position: relative;">
+      <span style="content: ''; position: absolute; width: 20px; height: 2px; background: white; top: -6px; left: 0;"></span>
+      <span style="content: ''; position: absolute; width: 20px; height: 2px; background: white; bottom: -6px; left: 0;"></span>
+    </span>
+    All category
+  </button>
+
+  <a href="hot-deals.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Hot deals</a>
+  <a href="gift-boxes.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Gift boxes</a>
+  <a href="projects.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Projects</a>
+  <a href="menu.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Menu item</a>
+  <a href="help.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Help</a>
+</nav>
+
+                <div class="header-meta">
+                    <span class="meta-link">English, USD <span class="arrow">&#9660;</span></span>
+                    <span class="meta-link">Ship to <img src="AE.svg" alt="AE" style="width:16px;vertical-align:middle;margin-left:2px;"> <span class="arrow">&#9660;</span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-container">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product-listing.html">Product Listing</a></li>
+                    <li>Product Details</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Product Details Section -->
+        <section class="product-details-section">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / 
+                    <a href="product-listing.html">Product Listing</a> / 
+                    <span>Product Details</span>
+                </div>
+                
+                <div class="product-details-container">
+                    <!-- Product Gallery -->
+                    <div class="product-gallery">
+                        <div class="product-main-image">
+                            <span class="in-stock-badge">In stock</span>
+                            <img src="1.jpg" alt="Product Image" id="mainImage">
+                        </div>
+                        <div class="product-thumbnails">
+                            <div class="thumbnail active">
+                                <img src="1.jpg" alt="Thumbnail 1">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="2.jpg" alt="Thumbnail 2">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="3.jpg" alt="Thumbnail 3">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="4.jpg" alt="Thumbnail 4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+                        <div class="product-header">
+                            <h1 class="product-title">Men's Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+                            <div class="product-meta">
+                                <div class="rating-stars">
+                                    <img src="star.svg" alt="star">
+                                    <img src="star.svg" alt="star">
+                                    <img src="star.svg" alt="star">
+                                    <img src="star.svg" alt="star">
+                                    <img src="star.svg" alt="star">
+                                    <span>4.9</span>
+                                </div>
+                                <span class="meta-divider"></span>
+                                <span>32 reviews</span>
+                                <span class="meta-divider"></span>
+                                <span>154 sold</span>
+                            </div>
+                        </div>
+
+                        <div class="product-pricing">
+                            <div class="price-grid">
+                                <div class="price-item">
+                                    <span class="price-label">Price:</span>
+                                    <div class="price-value">
+                                        <span class="current-price">$98.00</span>
+                                        <span class="original-price">$104.00</span>
+                                        <span class="discount-badge">-15%</span>
+                                    </div>
+                                </div>
+                                <div class="price-item">
+                                    <span class="price-label">TAX Rate:</span>
+                                    <div class="price-value">$18.00</div>
+                                </div>
+                                <div class="price-item">
+                                    <span class="price-label">Bulk Pricing:</span>
+                                    <div class="price-value">$90.00</div>
+                                </div>
+                            </div>
+                            <div class="price-note">Negotiable price</div>
+                        </div>
+
+                        <div class="product-attributes">
+                            <div class="attribute-row">
+                                <div class="attribute-label">Type</div>
+                                <div class="attribute-value">Classic shoes</div>
+                            </div>
+                            <div class="attribute-row">
+                                <div class="attribute-label">Material</div>
+                                <div class="attribute-value">Plastic material</div>
+                            </div>
+                            <div class="attribute-row">
+                                <div class="attribute-label">Design</div>
+                                <div class="attribute-value">Modern nice</div>
+                            </div>
+                            <div class="attribute-row">
+                                <div class="attribute-label">Customization</div>
+                                <div class="attribute-value">Customized logo and design custom packages</div>
+                            </div>
+                            <div class="attribute-row">
+                                <div class="attribute-label">Protection</div>
+                                <div class="attribute-value">Refund Policy</div>
+                            </div>
+                            <div class="attribute-row">
+                                <div class="attribute-label">Warranty</div>
+                                <div class="attribute-value">2 years full warranty</div>
+                            </div>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="btn-primary">Send inquiry</button>
+                            <button class="btn-outline-primary">Seller's profile</button>
+                            <button class="btn-wishlist">
+                                <img src="heart.svg" alt="Wishlist">
+                                Save for later
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Seller Info -->
+                    <div class="seller-info">
+                        <div class="seller-card">
+                            <div class="seller-header">
+                                <div class="seller-logo">
+                                    <img src="logo.svg" alt="Supplier">
+                                </div>
+                                <div class="seller-details">
+                                    <h3>Supplier</h3>
+                                    <p class="seller-company">Guanjoi Trading LLC</p>
+                                </div>
+                            </div>
+                            <div class="seller-location">
+                                <img src="FR.svg" alt="Germany" class="flag-icon">
+                                <span>Germany, Berlin</span>
+                            </div>
+                            <div class="seller-verification">
+                                <div class="verification-badge">Verified Seller</div>
+                            </div>
+                            <div class="seller-shipping">
+                                <div class="shipping-badge">Worldwide shipping</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Replace the Product Tabs section with this new structure -->
+                <div class="tabs-with-recommendations">
+                    <!-- Product Tabs -->
+                    <div class="product-tabs">
+                        <div class="tabs-header">
+                            <button class="tab-button active" data-tab="description">Description</button>
+                            <button class="tab-button" data-tab="reviews">Reviews</button>
+                            <button class="tab-button" data-tab="shipping">Shipping</button>
+                            <button class="tab-button" data-tab="seller">Seller</button>
+                        </div>
+
+                        <div class="tab-content active" id="description">
+                            <div class="description-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                <table class="specs-table">
+                                    <tr class="specs-row">
+                                        <td class="specs-label">Model</td>
+                                        <td class="specs-value">#8786867</td>
+                                    </tr>
+                                    <tr class="specs-row">
+                                        <td class="specs-label">Style</td>
+                                        <td class="specs-value">Classic style</td>
+                                    </tr>
+                                    <tr class="specs-row">
+                                        <td class="specs-label">Certificate</td>
+                                        <td class="specs-value">ISO-898921212</td>
+                                    </tr>
+                                    <tr class="specs-row">
+                                        <td class="specs-label">Size</td>
+                                        <td class="specs-value">34mm x 450mm x 19mm</td>
+                                    </tr>
+                                    <tr class="specs-row">
+                                        <td class="specs-label">Memory</td>
+                                        <td class="specs-value">36GB RAM</td>
+                                    </tr>
+                                </table>
+
+                                <div class="features-list">
+                                    <h3>Features:</h3>
+                                    <ul>
+                                        <li>Some great feature name here</li>
+                                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                        <li>Duis aute irure dolor in reprehenderit</li>
+                                        <li>Some great feature name here</li>
+                                        <li>Modern design and high quality</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="reviews">
+                            <div class="reviews-content">
+                                <!-- Reviews content will be added here -->
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="shipping">
+                            <div class="shipping-content">
+                                <!-- Shipping content will be added here -->
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="seller">
+                            <div class="seller-content">
+                                <!-- Seller content will be added here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- You May Like Section (Now on the right) -->
+                    <div class="you-may-like">
+                        <h3 class="you-may-like-title">You may like</h3>
+                        <div class="you-may-like-grid">
+                            <div class="may-like-card">
+                                <img src="iipphoonee.jpeg" alt="iPhone" class="may-like-image">
+                                <span class="may-like-price">$99.50</span>
+                            </div>
+                            <div class="may-like-card">
+                                <img src="smartwaatch.jpeg" alt="Smartwatch" class="may-like-image">
+                                <span class="may-like-price">$99.50</span>
+                            </div>
+                            <div class="may-like-card">
+                                <img src="lapptop.jpeg" alt="Laptop" class="may-like-image">
+                                <span class="may-like-price">$99.50</span>
+                            </div>
+                            <div class="may-like-card">
+                                <img src="earr.jpeg" alt="Wireless Earbuds" class="may-like-image">
+                                <span class="may-like-price">$99.50</span>
+                            </div>
+                            <div class="may-like-card">
+                                <img src="goprocamera.jpeg" alt="Camera" class="may-like-image">
+                                <span class="may-like-price">$99.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Products -->
+                <div class="related-products">
+                    <h2 class="section-title">Related products</h2>
+                    <div class="related-products-grid">
+                        <div class="product-card">
+                            <img src="wallet.jpeg" alt="Wallet" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-price">$10.30 - $20.00</h3>
+                                <p class="product-desc">Xiaomi Redmi 8 Original</p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="smartwaatch.jpeg" alt="Smartwatch" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-price">$10.30 - $20.00</h3>
+                                <p class="product-desc">Xiaomi Redmi 8 Original</p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="headphones.jpeg" alt="Headphones" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-price">$10.30 - $20.00</h3>
+                                <p class="product-desc">Xiaomi Redmi 8 Original</p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="shorrts.jpeg" alt="Shorts" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-price">$10.30 - $20.00</h3>
+                                <p class="product-desc">Xiaomi Redmi 8 Original</p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="kket.jpeg" alt="Kettle" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-price">$10.30 - $20.00</h3>
+                                <p class="product-desc">Xiaomi Redmi 8 Original</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Discount Banner -->
+                <div class="discount-banner">
+                    <div class="discount-content">
+                        <h3>Super discount on more than 100 USD</h3>
+                        <p>Have you ever finally just written the dummy text for your item description?</p>
+                    </div>
+                    <button class="btn-primary">Shop now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Subscribe on our newsletter</h2>
+                    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+                    
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" class="form-input">
+                            <button type="submit" class="btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+        <footer class="footer" style="background: #fff; border-top: 1px solid #DEE2E7; margin-top: 0;">
+            <div class="container" style="padding-top: 32px;">
+                <div class="footer-top" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start;">
+                    <div class="footer-logo" style="flex: 1 1 200px;">
+                        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 8px;">
+                            <img src="logo.svg" alt="Brand Logo" class="logo-icon" style="width: 36px; height: 36px;">
+                            <span style="font-weight: 600; font-size: 1.1rem;">Brand</span>
+                        </a>
+                        <div style="color: #8B96A5; font-size: 0.95rem; margin: 12px 0 8px 0;">
+                            Best information about the company<br>
+                            goes here but now lorem ipsum is
+                        </div>
+                        <div style="display: flex; gap: 8px; margin-top: 8px;">
+                            <a href="#"><img src="fb.svg" alt="Facebook" style="width: 20px;"></a>
+                            <a href="#"><img src="twitter.svg" alt="Twitter" style="width: 20px;"></a>
+                            <a href="#"><img src="linkedin.svg" alt="LinkedIn" style="width: 20px;"></a>
+                            <a href="#"><img src="insta.svg" alt="Instagram" style="width: 20px;"></a>
+                            <a href="#"><img src="youtube.svg" alt="YouTube" style="width: 20px;"></a>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex: 3 1 600px; gap: 48px; flex-wrap: wrap;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">About</div>
+                            <div><a href="#">About Us</a></div>
+                            <div><a href="#">Find store</a></div>
+                            <div><a href="#">Categories</a></div>
+                            <div><a href="#">Blogs</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Partnership</div>
+                            <div><a href="#">About Us</a></div>
+                            <div><a href="#">Find store</a></div>
+                            <div><a href="#">Categories</a></div>
+                            <div><a href="#">Blogs</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Information</div>
+                            <div><a href="#">Help Center</a></div>
+                            <div><a href="#">Money Refund</a></div>
+                            <div><a href="#">Shipping</a></div>
+                            <div><a href="#">Contact us</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">For users</div>
+                            <div><a href="#">Login</a></div>
+                            <div><a href="#">Register</a></div>
+                            <div><a href="#">Settings</a></div>
+                            <div><a href="#">My Orders</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Get app</div>
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <a href="#"><img src="type=Appstore.svg" alt="App Store" style="height: 32px;"></a>
+                                <a href="#"><img src="type=Googleplay.svg" alt="Google Play" style="height: 32px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #DEE2E7; margin-top: 32px; padding: 16px 0 8px 0;">
+                    <p style="color: #8B96A5; font-size: 0.95rem;">&copy; 2025 Ecommerce.</p>
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <img src="US.svg" alt="English" style="width: 18px; height: 14px;">
+                        <span style="font-size: 0.95rem; color: #8B96A5;">English</span>
+                        <span style="font-size: 1.1rem; color: #8B96A5;">&#8964;</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+    </html>

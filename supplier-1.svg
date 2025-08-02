@@ -1,0 +1,7 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="150" height="150" rx="75" fill="#F7F7F7"/>
+  <circle cx="75" cy="75" r="40" fill="#0D6EFD" fill-opacity="0.1"/>
+  <path d="M55 75H95M75 55V95" stroke="#0D6EFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 60L90 90M60 90L90 60" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="75" y="120" font-family="Arial" font-size="14" font-weight="bold" fill="#1C1C1C" text-anchor="middle">TechSupplier</text>
+</svg>

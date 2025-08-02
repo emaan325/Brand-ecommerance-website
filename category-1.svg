@@ -1,0 +1,7 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="8" fill="#F7F7F7"/>
+  <circle cx="90" cy="90" r="50" fill="#0D6EFD" fill-opacity="0.1"/>
+  <rect x="65" y="65" width="50" height="50" rx="4" fill="#0D6EFD" fill-opacity="0.2"/>
+  <path d="M75 90H105M90 75V105" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="90" y="140" font-family="Arial" font-size="16" font-weight="bold" fill="#1C1C1C" text-anchor="middle">Electronics</text>
+</svg>

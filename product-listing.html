@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing - Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="product-listing.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="logo-symbol.svg" alt="Brand Logo" class="logo-icon">
+                    <span class="logo-text">Brand</span>
+                </a>
+            </div>
+            <div class="header-center">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <select class="category-select">
+                        <option>All category</option>
+                        <option>Electronics</option>
+                        <option>Home & Outdoor</option>
+                    </select>
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="profile.html" class="header-action">
+                    <img src="profile.svg" alt="Profile">
+                    <span>Profile</span>
+                </a>
+                <a href="product-details.html" class="header-action">
+                    <img src="heart.svg" alt="Message">
+                    <span>Message</span>
+                </a>
+                <a href="product-listing.html" class="header-action">
+                    <img src="orders.svg" alt="Orders">
+                    <span>Orders</span>
+                </a>
+                <a href="cart.html" class="header-action">
+                    <img src="cart.svg" alt="Cart">
+                    <span>My cart</span>
+                </a>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container header-bottom-container">
+                <!-- Navigation Links -->
+                <nav class="main-nav" style="display: flex; align-items: center; gap: 24px;">
+  <button class="category-toggle" style="display: flex; align-items: center; gap: 8px; padding: 10px 12px; background: #0D6EFD; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
+    <span class="hamburger-icon" style="width: 20px; height: 2px; background: white; position: relative;">
+      <span style="content: ''; position: absolute; width: 20px; height: 2px; background: white; top: -6px; left: 0;"></span>
+      <span style="content: ''; position: absolute; width: 20px; height: 2px; background: white; bottom: -6px; left: 0;"></span>
+    </span>
+    All category
+  </button>
+
+  <a href="hot-deals.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Hot deals</a>
+  <a href="gift-boxes.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Gift boxes</a>
+  <a href="projects.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Projects</a>
+  <a href="menu.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Menu item</a>
+  <a href="help.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Help</a>
+</nav>
+
+                <div class="header-meta">
+                    <span class="meta-link">English, USD <span class="arrow">&#9660;</span></span>
+                    <span class="meta-link">Ship to <img src="AE.svg" alt="AE" style="width:16px;vertical-align:middle;margin-left:2px;"> <span class="arrow">&#9660;</span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-container">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Product Listing</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Product Listing Section -->
+        <section class="product-listing-section">
+            <div class="container">
+                <div class="product-listing-container">
+                    <!-- Sidebar Filters -->
+                    <aside class="sidebar">
+                        <div class="filter-group">
+                            <h3 class="filter-title">Category</h3>
+                            <ul class="filter-list">
+                                <li class="filter-item active"><a href="#">Mobile accessory</a></li>
+                                <li class="filter-item"><a href="#">Electronics</a></li>
+                                <li class="filter-item"><a href="#">Smartphones</a></li>
+                                <li class="filter-item"><a href="#">Modern tech</a></li>
+                                <li class="filter-item"><a href="#" class="see-all">See all</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Brands</h3>
+                            <ul class="filter-list checkbox-list">
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="brand" value="samsung">
+                                        <span class="checkbox-text">Samsung</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="brand" value="apple">
+                                        <span class="checkbox-text">Apple</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="brand" value="huawei">
+                                        <span class="checkbox-text">Huawei</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="brand" value="pocco">
+                                        <span class="checkbox-text">Pocco</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="brand" value="lenovo">
+                                        <span class="checkbox-text">Lenovo</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item"><a href="#" class="see-all">See all</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Features</h3>
+                            <ul class="filter-list checkbox-list">
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="metallic">
+                                        <span class="checkbox-text">Metallic</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="plastic-cover">
+                                        <span class="checkbox-text">Plastic cover</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="8gb-ram">
+                                        <span class="checkbox-text">8GB Ram</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="super-power">
+                                        <span class="checkbox-text">Super power</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="feature" value="large-memory">
+                                        <span class="checkbox-text">Large Memory</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item"><a href="#" class="see-all">See all</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Price range</h3>
+                            <div class="price-range-slider">
+                                <!-- Price range slider would be implemented with JavaScript -->
+                                <div class="price-range-track"></div>
+                                <div class="price-range-handle"></div>
+                                <div class="price-range-handle"></div>
+                            </div>
+                            <div class="price-inputs">
+                                <div class="price-input">
+                                    <label>Min</label>
+                                    <input type="text" placeholder="0">
+                                </div>
+                                <div class="price-input">
+                                    <label>Max</label>
+                                    <input type="text" placeholder="999">
+                                </div>
+                                <button class="btn-apply">Apply</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Condition</h3>
+                            <ul class="filter-list radio-list">
+                                <li class="filter-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="condition" value="any" checked>
+                                        <span class="radio-text">Any</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="condition" value="refurbished">
+                                        <span class="radio-text">Refurbished</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="condition" value="brand-new">
+                                        <span class="radio-text">Brand new</span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="condition" value="old-items">
+                                        <span class="radio-text">Old items</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Ratings</h3>
+                            <ul class="filter-list rating-list">
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="rating" value="5">
+                                        <span class="rating-stars">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="rating" value="4">
+                                        <span class="rating-stars">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="rating" value="3">
+                                        <span class="rating-stars">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="rating" value="2">
+                                        <span class="rating-stars">
+                                            <img src="star.svg" alt="Star Rating">
+                                            <img src="star.svg" alt="Star Rating">
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="filter-item">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="rating" value="1">
+                                        <span class="rating-stars">
+                                            <img src="tar.svg" alt="Star Rating">
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <!-- Product List -->
+                    <div class="product-list-container">
+                        <div class="product-list-header">
+                            <div class="product-count">
+                                <span>12,911 items in <strong>Mobile accessory</strong></span>
+                            </div>
+                            <div class="product-list-actions">
+                                <div class="verified-filter">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="verified-only">
+                                        <span class="checkbox-text">Verified only</span>
+                                    </label>
+                                </div>
+                                <div class="featured-dropdown">
+                                    <select>
+                                        <option>Featured</option>
+                                        <option>Price: Low to High</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Newest First</option>
+                                    </select>
+                                </div>
+                                <div class="view-toggle">
+                                    <button class="toggle-btn active" id="list-view-btn" title="List view"><img src="list.svg" alt="List view"></button>
+                                    <button class="toggle-btn" id="grid-view-btn" title="Grid view"><img src="grid.svg" alt="Grid view"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="active-filters" id="active-filters">
+                            <span class="filter-tag">Samsung <span class="remove-filter">×</span></span>
+                            <span class="filter-tag">Apple <span class="remove-filter">×</span></span>
+                            <span class="filter-tag">Poco <span class="remove-filter">×</span></span>
+                            <span class="filter-tag">Metallic <span class="remove-filter">×</span></span>
+                            <span class="filter-tag">4 star <span class="remove-filter">×</span></span>
+                            <span class="filter-tag">3 star <span class="remove-filter">×</span></span>
+                            <a href="#" class="clear-filters">Clear all filter</a>
+                        </div>
+
+                        <!-- List View -->
+                        <div class="products-container list-view" id="products-container-list">
+                            <!-- 6 Product Cards (List View, Figma accurate) -->
+                            <div class="product-card list-card">
+                                <div class="list-img-wrap">
+                                    <img src="iipphoonee.jpeg" alt="iPhone 12 Red">
+                                </div>
+                                <div class="list-info-wrap">
+                                    <div class="list-title-row">
+                                        <h3>Canon Cmeara EOS 2000, Black 10x zoom</h3>
+                                        <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+                                    </div>
+                                    <div class="list-pricing-row">
+                                        <span class="price">$998.00</span>
+                                        <span class="old-price">$1128.00</span>
+                                        <span class="stars"><img src="star.svg" alt="star" class="star-icon"> 7.5</span>
+                                        <span class="orders">154 orders</span>
+                                        <span class="shipping">• <span class="free-shipping">Free Shipping</span></span>
+                                    </div>
+                                    <p class="list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <a href="product-details.html" class="view-details">View details</a>
+                                </div>
+                            </div>
+                            <div class="product-card list-card">
+                                <div class="list-img-wrap">
+                                    <img src="bllue.jpeg" alt="iPhone 12 Blue">
+                                </div>
+                                <div class="list-info-wrap">
+                                    <div class="list-title-row">
+                                        <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+                                    </div>
+                                    <div class="list-pricing-row">
+                                        <span class="price">$998.00</span>
+                                        <span class="old-price">$1128.00</span>
+                                        <span class="stars"><img src="star.svg" alt="star" class="star-icon"> 7.5</span>
+                                        <span class="orders">154 orders</span>
+                                        <span class="shipping">• <span class="free-shipping">Free Shipping</span></span>
+                                    </div>
+                                    <p class="list-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="product-details.html" class="view-details">View details</a>
+                                </div>
+                            </div>
+                            <div class="product-card list-card">
+                                <div class="list-img-wrap">
+                                    <img src="earr.jpeg" alt="Mi 8">
+                                </div>
+                                <div class="list-info-wrap">
+                                    <div class="list-title-row">
+                                        <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+                                    </div>
+                                    <div class="list-pricing-row">
+                                        <span class="price">$998.00</span>
+                                        <span class="old-price">$1128.00</span>
+                                        <span class="stars"><img src="star.svg" alt="star" class="star-icon"> 7.5</span>
+                                        <span class="orders">154 orders</span>
+                                        <span class="shipping">• <span class="free-shipping">Free Shipping</span></span>
+                                    </div>
+                                    <p class="list-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="product-details.html" class="view-details">View details</a>
+</div>
+                            </div>
+                            <div class="product-card list-card">
+                                <div class="list-img-wrap">
+                                    <img src="taa.jpeg" alt="Tablet">
+                                </div>
+                                <div class="list-info-wrap">
+                                    <div class="list-title-row">
+                                        <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+                                    </div>
+                                    <div class="list-pricing-row">
+                                        <span class="price">$998.00</span>
+                                        <span class="old-price">$1128.00</span>
+                                        <span class="stars"><img src="star.svg" alt="star" class="star-icon"> 7.5</span>
+                                        <span class="orders">154 orders</span>
+                                        <span class="shipping">• <span class="free-shipping">Free Shipping</span></span>
+                                    </div>
+                                    <p class="list-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="product-details.html" class="view-details">View details</a>
+                                </div>
+                            </div>
+                            <div class="product-card list-card">
+                                <div class="list-img-wrap">
+                                    <img src="lapptop.jpeg" alt="Laptop">
+                                </div>
+                                <div class="list-info-wrap">
+                                    <div class="list-title-row">
+                                        <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+                                    </div>
+                                    <div class="list-pricing-row">
+                                        <span class="price">$998.00</span>
+                                        <span class="old-price">$1128.00</span>
+                                        <span class="stars"><img src="star.svg" alt="star" class="star-icon"> 7.5</span>
+                                        <span class="orders">154 orders</span>
+                                        <span class="shipping">• <span class="free-shipping">Free Shipping</span></span>
+                                    </div>
+                                    <p class="list-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="product-details.html" class="view-details">View details</a>
+                                </div>
+                            </div>
+                            <div class="product-card list-card">
+                                <div class="list-img-wrap">
+                                    <img src="smartwaatch.jpeg" alt="Smartwatch">
+                                </div>
+                                <div class="list-info-wrap">
+                                    <div class="list-title-row">
+                                        <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                        <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+                                    </div>
+                                    <div class="list-pricing-row">
+                                        <span class="price">$998.00</span>
+                                        <span class="old-price">$1128.00</span>
+                                        <span class="stars"><img src="star.svg" alt="star" class="star-icon"> 7.5</span>
+                                        <span class="orders">154 orders</span>
+                                        <span class="shipping">• <span class="free-shipping">Free Shipping</span></span>
+                                    </div>
+                                    <p class="list-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                                    <a href="product-details.html" class="view-details">View details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid View (hidden by default) -->
+                        <div class="products-container grid-view" id="products-container-grid" style="display:none;">
+    <div class="product-card grid-card">
+        <div class="product-image">
+            <img src="iipphoonee.jpeg" alt="iPhone 12 Red">
+            <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+        </div>
+        <div class="product-info">
+            <div class="product-pricing">
+                <span class="price">$99.50</span>
+                <span class="old-price">$1128.00</span>
+            </div>
+            <div class="product-meta">
+                <span class="stars"><img src="star.svg" class="star-icon" alt="star"> 7.5</span>
+                <span class="orders">154 orders</span>
+            </div>
+            <div class="product-shipping">Free Shipping</div>
+            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+        </div>
+    </div>
+    <div class="product-card grid-card">
+        <div class="product-image">
+            <img src="bllue.jpeg" alt="iPhone 12 Blue">
+            <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+        </div>
+        <div class="product-info">
+            <div class="product-pricing">
+                <span class="price">$99.50</span>
+                <span class="old-price">$1128.00</span>
+            </div>
+            <div class="product-meta">
+                <span class="stars"><img src="star.svg" class="star-icon" alt="star"> 7.5</span>
+                <span class="orders">154 orders</span>
+            </div>
+            <div class="product-shipping">Free Shipping</div>
+            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+        </div>
+    </div>
+    <div class="product-card grid-card">
+        <div class="product-image">
+            <img src="earr.jpeg" alt="Mi 8">
+            <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+        </div>
+        <div class="product-info">
+            <div class="product-pricing">
+                <span class="price">$99.50</span>
+                <span class="old-price">$1128.00</span>
+            </div>
+            <div class="product-meta">
+                <span class="stars"><img src="star.svg" class="star-icon" alt="star"> 7.5</span>
+                <span class="orders">154 orders</span>
+            </div>
+            <div class="product-shipping">Free Shipping</div>
+            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+        </div>
+    </div>
+    <div class="product-card grid-card">
+        <div class="product-image">
+            <img src="headphones.jpeg" alt="White Buds">
+            <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+        </div>
+        <div class="product-info">
+            <div class="product-pricing">
+                <span class="price">$99.50</span>
+                <span class="old-price">$1128.00</span>
+            </div>
+            <div class="product-meta">
+                <span class="stars"><img src="star.svg" class="star-icon" alt="star"> 7.5</span>
+                <span class="orders">154 orders</span>
+            </div>
+            <div class="product-shipping">Free Shipping</div>
+            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+        </div>
+    </div>
+    <div class="product-card grid-card">
+        <div class="product-image">
+            <img src="lapptop.jpeg" alt="Laptop">
+            <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+        </div>
+        <div class="product-info">
+            <div class="product-pricing">
+                <span class="price">$99.50</span>
+                <span class="old-price">$1128.00</span>
+            </div>
+            <div class="product-meta">
+                <span class="stars"><img src="star.svg" class="star-icon" alt="star"> 7.5</span>
+                <span class="orders">154 orders</span>
+            </div>
+            <div class="product-shipping">Free Shipping</div>
+            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+        </div>
+    </div>
+    <div class="product-card grid-card">
+        <div class="product-image">
+            <img src="smartwaatch.jpeg" alt="Smartwatch">
+            <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+        </div>
+        <div class="product-info">
+            <div class="product-pricing">
+                <span class="price">$99.50</span>
+                <span class="old-price">$1128.00</span>
+            </div>
+            <div class="product-meta">
+                <span class="stars"><img src="star.svg" class="star-icon" alt="star"> 7.5</span>
+                <span class="orders">154 orders</span>
+            </div>
+            <div class="product-shipping">Free Shipping</div>
+            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+        </div>
+    </div>
+    <div class="product-card grid-card">
+        <div class="product-image">
+            <img src="reeddmi.jpeg" alt="Redmi Phone">
+            <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+        </div>
+        <div class="product-info">
+            <div class="product-pricing">
+                <span class="price">$99.50</span>
+                <span class="old-price">$1128.00</span>
+            </div>
+            <div class="product-meta">
+                <span class="stars"><img src="star.svg" class="star-icon" alt="star"> 7.5</span>
+                <span class="orders">154 orders</span>
+            </div>
+            <div class="product-shipping">Free Shipping</div>
+            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+        </div>
+    </div>
+    <div class="product-card grid-card">
+        <div class="product-image">
+            <img src="earr.jpeg" alt="Wireless Earbuds">
+            <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+        </div>
+        <div class="product-info">
+            <div class="product-pricing">
+                <span class="price">$99.50</span>
+                <span class="old-price">$1128.00</span>
+            </div>
+            <div class="product-meta">
+                <span class="stars"><img src="star.svg" class="star-icon" alt="star"> 7.5</span>
+                <span class="orders">154 orders</span>
+            </div>
+            <div class="product-shipping">Free Shipping</div>
+            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+        </div>
+    </div>
+    <div class="product-card grid-card">
+        <div class="product-image">
+            <img src="1.jpg" alt="Summer T-shirt">
+            <button class="wishlist-btn"><img src="heart.svg" alt="Wishlist"></button>
+        </div>
+        <div class="product-info">
+            <div class="product-pricing">
+                <span class="price">$99.50</span>
+                <span class="old-price">$1128.00</span>
+            </div>
+            <div class="product-meta">
+                <span class="stars"><img src="star.svg" class="star-icon" alt="star"> 7.5</span>
+                <span class="orders">154 orders</span>
+            </div>
+            <div class="product-shipping">Free Shipping</div>
+            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+        </div>
+    </div>
+</div>
+
+                        <div class="pagination-container">
+                            <select class="show-count">
+                                <option>Show 10</option>
+                                <option>Show 20</option>
+                                <option>Show 50</option>
+                            </select>
+                            <ul class="pagination">
+                                <li><a href="#" class="active">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Newsletter Section -->
+        <section class="newsletter-section" style="background: #f7f7fa; padding: 32px 0 0 0;">
+            <div class="container" style="max-width: 700px;">
+                <div class="newsletter-content" style="text-align: center;">
+                    <div class="section-header" style="margin-bottom: 8px;">
+                        <span class="section-title" style="font-size: 1rem; font-weight: 600;">Subscribe on our newsletter</span>
+                    </div>
+                    <p style="color: #8B96A5; font-size: 0.95rem; margin-bottom: 18px;">
+                        Get daily news on upcoming offers from many suppliers all over the world
+                    </p>
+                    <form class="newsletter-form" style="display: flex; justify-content: center; gap: 8px;">
+                        <input type="email" placeholder="Email" class="form-input" style="padding: 8px 12px; border-radius: 4px; border: 1px solid #DEE2E7; min-width: 220px;">
+                        <button type="submit" class="btn-primary" style="padding: 8px 24px;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer" style="background: #fff; border-top: 1px solid #DEE2E7; margin-top: 0;">
+            <div class="container" style="padding-top: 32px;">
+                <div class="footer-top" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start;">
+                    <div class="footer-logo" style="flex: 1 1 200px;">
+                        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 8px;">
+                            <img src="logo.svg" alt="Brand Logo" class="logo-icon" style="width: 36px; height: 36px;">
+                            <span style="font-weight: 600; font-size: 1.1rem;">Brand</span>
+                        </a>
+                        <div style="color: #8B96A5; font-size: 0.95rem; margin: 12px 0 8px 0;">
+                            Best information about the company<br>
+                            goes here but now lorem ipsum is
+                        </div>
+                        <div style="display: flex; gap: 8px; margin-top: 8px;">
+                            <a href="#"><img src="fb.svg" alt="Facebook" style="width: 20px;"></a>
+                            <a href="#"><img src="twitter.svg" alt="Twitter" style="width: 20px;"></a>
+                            <a href="#"><img src="linkedin.svg" alt="LinkedIn" style="width: 20px;"></a>
+                            <a href="#"><img src="insta.svg" alt="Instagram" style="width: 20px;"></a>
+                            <a href="#"><img src="youtube.svg" alt="YouTube" style="width: 20px;"></a>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex: 3 1 600px; gap: 48px; flex-wrap: wrap;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">About</div>
+                            <div><a href="#">About Us</a></div>
+                            <div><a href="#">Find store</a></div>
+                            <div><a href="#">Categories</a></div>
+                            <div><a href="#">Blogs</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Partnership</div>
+                            <div><a href="#">About Us</a></div>
+                            <div><a href="#">Find store</a></div>
+                            <div><a href="#">Categories</a></div>
+                            <div><a href="#">Blogs</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Information</div>
+                            <div><a href="#">Help Center</a></div>
+                            <div><a href="#">Money Refund</a></div>
+                            <div><a href="#">Shipping</a></div>
+                            <div><a href="#">Contact us</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">For users</div>
+                            <div><a href="#">Login</a></div>
+                            <div><a href="#">Register</a></div>
+                            <div><a href="#">Settings</a></div>
+                            <div><a href="#">My Orders</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Get app</div>
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <a href="#"><img src="type=Appstore.svg" alt="App Store" style="height: 32px;"></a>
+                                <a href="#"><img src="type=Googleplay.svg" alt="Google Play" style="height: 32px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #DEE2E7; margin-top: 32px; padding: 16px 0 8px 0;">
+                    <p style="color: #8B96A5; font-size: 0.95rem;">&copy; 2025 Ecommerce.</p>
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <img src="US.svg" alt="English" style="width: 18px; height: 14px;">
+                        <span style="font-size: 0.95rem; color: #8B96A5;">English</span>
+                        <span style="font-size: 1.1rem; color: #8B96A5;">&#8964;</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    
+    if(category === 'hot-offers') {
+        // Highlight the hot offers category if needed
+        document.querySelectorAll('.category-item').forEach(item => {
+            if(item.textContent.toLowerCase().includes('hot offers')) {
+                item.classList.add('active');
+            }
+        });
+        
+        // Update the breadcrumb
+        const breadcrumb = document.querySelector('.breadcrumb');
+        if(breadcrumb) {
+            breadcrumb.innerHTML = `
+                <a href="index.html">Home</a> / 
+                <a href="#">Hot offers</a>
+            `;
+        }
+        
+        // Update the product count text
+        const productCount = document.querySelector('.product-count');
+        if(productCount) {
+            productCount.innerHTML = '<span>Hot offers items</span>';
+        }
+    }
+});
+</script>
+    </body>
+    </html>

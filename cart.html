@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Header Section (Simplified) -->
+    <header class="header header-simplified">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="logo-symbol.svg" alt="Logo" class="logo-icon">
+                    <span>Brand</span>
+                </a>
+            </div>
+            
+            <!-- Header Links -->
+            <div class="header-right">
+                <a href="profile.html" class="header-action">
+                    <img src="profile.svg" alt="Profile">
+                    <span>Profile</span>
+                </a>
+                <a href="product-details.html" class="header-action">
+                    <img src="heart.svg" alt="Message">
+                    <span>Message</span>
+                </a>
+                <a href="product-listing.html" class="header-action">
+                    <img src="orders.svg" alt="Orders">
+                    <span>Orders</span>
+                </a>
+                <a href="cart.html" class="header-action">
+                    <img src="cart.svg" alt="Cart">
+                    <span>My cart</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="cart-section">
+            <div class="container">
+                <h1 class="cart-title">My cart (3)</h1>
+                
+                <div class="cart-container">
+                    <div class="cart-items">
+                        <!-- Cart Item 1 -->
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="1.jpg" alt="T-shirt" class="product-image">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">T-shirts with multiple colors, for men and lady</h3>
+                                <div class="item-attributes">
+                                    <p>Size: medium, Color: blue, Material: Plastic</p>
+                                    <p>Seller: Artel Market</p>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="btn-remove">Remove</button>
+                                    <button class="btn-save">Save for later</button>
+                                </div>
+                            </div>
+                            <div class="item-price">$78.99</div>
+                            <div class="item-quantity">
+                                <div class="quantity-selector">
+                                    <span>Qty: 9</span>
+                                    <img src="star.svg" alt="Dropdown" class="dropdown-icon">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Cart Item 2 -->
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="2.jpg" alt="Backpack" class="product-image">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">T-shirts with multiple colors, for men and lady</h3>
+                                <div class="item-attributes">
+                                    <p>Size: medium, Color: blue, Material: Plastic</p>
+                                    <p>Seller: Best factory LLC</p>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="btn-remove">Remove</button>
+                                    <button class="btn-save">Save for later</button>
+                                </div>
+                            </div>
+                            <div class="item-price">$39.00</div>
+                            <div class="item-quantity">
+                                <div class="quantity-selector">
+                                    <span>Qty: 3</span>
+                                    <img src="star.svg" alt="Dropdown" class="dropdown-icon">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Cart Item 3 -->
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="3.jpg" alt="T-shirt" class="product-image">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">T-shirts with multiple colors, for men and lady</h3>
+                                <div class="item-attributes">
+                                    <p>Size: medium, Color: blue, Material: Plastic</p>
+                                    <p>Seller: Artel Market</p>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="btn-remove">Remove</button>
+                                    <button class="btn-save">Save for later</button>
+                                </div>
+                            </div>
+                            <div class="item-price">$170.50</div>
+                            <div class="item-quantity">
+                                <div class="quantity-selector">
+                                    <span>Qty: 1</span>
+                                    <img src="star.svg" alt="Dropdown" class="dropdown-icon">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Shopping Actions -->
+                        <div class="cart-actions">
+                            <a href="index.html" class="btn-back">Back to shop</a>
+                            <a href="product-listing.html" class="btn-continue">Continue shopping</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <div class="coupon-section">
+                            <h3>Have a coupon?</h3>
+                            <div class="coupon-form">
+                                <input type="text" placeholder="Add coupon" class="coupon-input">
+                                <button class="btn-apply">Apply</button>
+                            </div>
+                        </div>
+                        
+                        <div class="order-summary">
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span class="price">$1403.97</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Discount:</span>
+                                <span class="price discount">- $60.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax:</span>
+                                <span class="price">+ $14.00</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total:</span>
+                                <span class="price">$1357.97</span>
+                            </div>
+                            <button class="btn-checkout">Proceed to checkout</button>
+                            <div class="payment-methods">
+                                <img src="https://cdn-icons-png.flaticon.com/128/349/349221.png" alt="American Express" width="24" height="24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/196/196578.png" alt="Mastercard" width="24" height="24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="PayPal" width="24" height="24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/196/196581.png" alt="Visa" width="24" height="24">
+                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968276.png" alt="Apple Pay" width="24" height="24">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-features">
+                    <div class="feature">
+                        <div class="feature-icon secure">
+                            <img src="service-1.svg" alt="Secure Payment">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Secure payment</h3>
+                            <p>Have you ever finally just</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon support">
+                            <img src="service-1.svg" alt="Customer Support">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Customer support</h3>
+                            <p>Have you ever finally just</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon delivery">
+                            <img src="service-1.svg" alt="Free Delivery">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Free delivery</h3>
+                            <p>Have you ever finally just</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="saved-items">
+                    <h2>Saved for later</h2>
+                    <div class="saved-items-grid">
+                        <div class="product-card">
+                            <img src="taa.jpeg" alt="Tablet" class="product-image">
+                            <div class="product-price">$99.50</div>
+                            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                            <button class="btn-move-to-cart">Move to cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="iipphoonee.jpeg" alt="Phone" class="product-image">
+                            <div class="product-price">$99.50</div>
+                            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                            <button class="btn-move-to-cart">Move to cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="smartwaatch.jpeg" alt="Smartwatch" class="product-image">
+                            <div class="product-price">$99.50</div>
+                            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                            <button class="btn-move-to-cart">Move to cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="lapptop.jpeg" alt="Laptop" class="product-image">
+                            <div class="product-price">$99.50</div>
+                            <div class="product-title">GoPro HERO6 4K Action Camera - Black</div>
+                            <button class="btn-move-to-cart">Move to cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Discount Banner -->
+                <div class="discount-banner">
+                    <div class="discount-content">
+                        <h3>Super discount on more than 100 USD</h3>
+                        <p>Have you ever finally just written the dummy text for your item description?</p>
+                    </div>
+                    <button class="btn-primary">Shop now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer Section -->
+        <footer class="footer" style="background: #fff; border-top: 1px solid #DEE2E7; margin-top: 0;">
+            <div class="container" style="padding-top: 32px;">
+                <div class="footer-top" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start;">
+                    <div class="footer-logo" style="flex: 1 1 200px;">
+                        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 8px;">
+                            <img src="logo.svg" alt="Brand Logo" class="logo-icon" style="width: 36px; height: 36px;">
+                            <span style="font-weight: 600; font-size: 1.1rem;">Brand</span>
+                        </a>
+                        <div style="color: #8B96A5; font-size: 0.95rem; margin: 12px 0 8px 0;">
+                            Best information about the company<br>
+                            goes here but now lorem ipsum is
+                        </div>
+                        <div style="display: flex; gap: 8px; margin-top: 8px;">
+                            <a href="#"><img src="fb.svg" alt="Facebook" style="width: 20px;"></a>
+                            <a href="#"><img src="twitter.svg" alt="Twitter" style="width: 20px;"></a>
+                            <a href="#"><img src="linkedin.svg" alt="LinkedIn" style="width: 20px;"></a>
+                            <a href="#"><img src="insta.svg" alt="Instagram" style="width: 20px;"></a>
+                            <a href="#"><img src="youtube.svg" alt="YouTube" style="width: 20px;"></a>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex: 3 1 600px; gap: 48px; flex-wrap: wrap;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">About</div>
+                            <div><a href="#">About Us</a></div>
+                            <div><a href="#">Find store</a></div>
+                            <div><a href="#">Categories</a></div>
+                            <div><a href="#">Blogs</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Partnership</div>
+                            <div><a href="#">About Us</a></div>
+                            <div><a href="#">Find store</a></div>
+                            <div><a href="#">Categories</a></div>
+                            <div><a href="#">Blogs</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Information</div>
+                            <div><a href="#">Help Center</a></div>
+                            <div><a href="#">Money Refund</a></div>
+                            <div><a href="#">Shipping</a></div>
+                            <div><a href="#">Contact us</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">For users</div>
+                            <div><a href="#">Login</a></div>
+                            <div><a href="#">Register</a></div>
+                            <div><a href="#">Settings</a></div>
+                            <div><a href="#">My Orders</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Get app</div>
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <a href="#"><img src="type=Appstore.svg" alt="App Store" style="height: 32px;"></a>
+                                <a href="#"><img src="type=Googleplay.svg" alt="Google Play" style="height: 32px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #DEE2E7; margin-top: 32px; padding: 16px 0 8px 0;">
+                    <p style="color: #8B96A5; font-size: 0.95rem;">&copy; 2025 Ecommerce.</p>
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <img src="US.svg" alt="English" style="width: 18px; height: 14px;">
+                        <span style="font-size: 0.95rem; color: #8B96A5;">English</span>
+                        <span style="font-size: 1.1rem; color: #8B96A5;">&#8964;</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+    </html>

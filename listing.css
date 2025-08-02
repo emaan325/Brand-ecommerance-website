@@ -1,0 +1,32 @@
+.view-toggles {
+    display: flex;
+    gap: 8px;
+}
+
+.view-toggle {
+    background: none;
+    border: 1px solid #DEE2E7;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.view-toggle:hover {
+    background: #f7f7fa;
+}
+
+.view-toggle.active {
+    background: #0D6EFD;
+    border-color: #0D6EFD;
+}
+
+.view-toggle.active img {
+    filter: brightness(0) invert(1);
+}
+
+.view-toggle img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}

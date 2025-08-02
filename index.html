@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand - E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<!-- Header Section -->
+<header class="header">
+    <div class="container header-container">
+        <div class="header-left">
+            <a href="index.html" class="logo">
+                <img src="logo-symbol.svg" alt="Brand Logo" class="logo-icon">
+                <span class="logo-text">Brand</span>
+            </a>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search">
+            <select class="category-select">
+                <option>All category</option>
+                <option>Electronics</option>
+                <option>Home & Outdoor</option>
+            </select>
+            <button class="search-btn">Search</button>
+        </div>
+        
+        <div class="header-right">
+            <a href="profile.html" class="header-action">
+                <img src="profile.svg" alt="Profile">
+                <span>Profile</span>
+            </a>
+            <a href="product-details.html" class="header-action">
+                <img src="heart.svg" alt="Message">
+                <span>Message</span>
+            </a>
+            <a href="product-listing.html" class="header-action">
+                <img src="orders.svg" alt="Orders">
+                <span>Orders</span>
+            </a>
+            <a href="cart.html" class="header-action">
+                <img src="cart.svg" alt="Cart">
+                <span>My cart</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="main-nav" style="display: flex; align-items: center; gap: 24px;">
+  <button class="category-toggle" style="display: flex; align-items: center; gap: 8px; padding: 10px 12px; background: #0D6EFD; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
+    <span class="hamburger-icon" style="width: 20px; height: 2px; background: white; position: relative;">
+      <span style="content: ''; position: absolute; width: 20px; height: 2px; background: white; top: -6px; left: 0;"></span>
+      <span style="content: ''; position: absolute; width: 20px; height: 2px; background: white; bottom: -6px; left: 0;"></span>
+    </span>
+    All category
+  </button>
+
+  <a href="hot-deals.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Hot deals</a>
+  <a href="gift-boxes.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Gift boxes</a>
+  <a href="projects.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Projects</a>
+  <a href="menu.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Menu item</a>
+  <a href="help.html" class="nav-link" style="text-decoration: none; color: #1C1C1C; font-size: 16px;">Help</a>
+</nav>
+
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <!-- Sidebar Categories -->
+        <aside class="hero-sidebar">
+          <h3 class="sidebar-title">All Categories</h3>
+          <ul class="category-menu">
+            <li class="category-item active">
+              <a href="#" class="category-link">
+                <img src="list.svg" class="category-icon" alt="Automobiles">
+                <span>Automobiles</span>
+              </a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-link">
+                <img src="list.svg" class="category-icon" alt="Clothes and wear">
+                <span>Clothes and wear</span>
+              </a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-link">
+                <img src="list.svg" class="category-icon" alt="Home interiors">
+                <span>Home interiors</span>
+              </a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-link">
+                <img src="list.svg" class="category-icon" alt="Computer and tech">
+                <span>Computer and tech</span>
+              </a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-link">
+                <img src="list.svg" class="category-icon" alt="Tools and equipment">
+                <span>Tools, equipment</span>
+              </a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-link">
+                <img src="list.svg" class="category-icon" alt="Sports and outdoor">
+                <span>Sports and outdoor</span>
+              </a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-link">
+                <img src="list.svg" class="category-icon" alt="Animal and pets">
+                <span>Animal and pets</span>
+              </a>
+            </li>
+            <li class="category-item">
+              <a href="#" class="category-link">
+                <img src="list.svg" class="category-icon" alt="Machinery tools">
+                <span>Machinery tools</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-banner-inner" style="height: 300px;">
+        <img src="banner.PNG" alt="Latest trending Electronic items" class="hero-banner-img">
+        
+      </div>
+    </div>
+    
+    <!-- Hero Side Widgets -->
+    <div class="hero-widgets">
+      <div class="user-card">
+        <div class="user-avatar">
+          <img src="profile.svg" alt="User">
+        </div>
+        <div class="user-info">
+          <p class="user-greeting">Hi, user</p>
+          <p class="user-message">Let's get started</p>
+          <a href="#" class="btn-join">Join now</a>
+        </div>
+      </div>
+      
+      <div class="side-offer orange">
+        <div class="offer-icon">
+        </div>
+        <div class="offer-content">
+          <h4>Get US $10 off</h4>
+          <p>with a new supplier</p>
+        </div>
+      </div>
+      
+      <div class="side-offer blue">
+        <div class="offer-icon">
+        </div>
+        <div class="offer-content">
+          <h4>Send quotes with</h4>
+          <p>supplier preferences</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Deals Section -->
+        <section class="deals">
+  <div class="container deals-container">
+    <div class="deals-header">
+      <div>
+        <span class="deals-title">Deals and offers</span>
+        <span class="deals-subtitle">Hygiene equipments</span>
+      </div>
+      <div class="deal-timer">
+        <div class="timer-box"><span>04</span><small>Days</small></div>
+        <div class="timer-box"><span>13</span><small>Hours</small></div>
+        <div class="timer-box"><span>34</span><small>Min</small></div>
+        <div class="timer-box"><span>56</span><small>Sec</small></div>
+      </div>
+    </div>
+    <div class="deals-grid">
+      <div class="deal-card">
+        <img src="smartwaatch.jpeg" alt="Smart watches" class="deal-image">
+        <div class="deal-title">Smart watches</div>
+        <div class="deal-discount">-25%</div>
+      </div>
+      <div class="deal-card">
+        <img src="lapptop.jpeg" alt="Laptops" class="deal-image">
+        <div class="deal-title">Laptops</div>
+        <div class="deal-discount">-15%</div>
+      </div>
+      <div class="deal-card">
+        <img src="goprocamera.jpeg" alt="GoPro cameras" class="deal-image">
+        <div class="deal-title">GoPro cameras</div>
+        <div class="deal-discount">-40%</div>
+      </div>
+      <div class="deal-card">
+        <img src="headphones.jpeg" alt="Headphones" class="deal-image">
+        <div class="deal-title">Headphones</div>
+        <div class="deal-discount">-25%</div>
+      </div>
+      <div class="deal-card">
+        <img src="canon.jpeg" alt="Canon cameras" class="deal-image">
+        <div class="deal-title">Canon cameras</div>
+        <div class="deal-discount">-25%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Home and Outdoor Category -->
+        <section class="category-section">
+  <div class="container category-section-container">
+    <div class="category-section-header">
+      <span class="category-section-title">Home and outdoor</span>
+      <a href="#" class="category-section-link">Source now</a>
+    </div>
+    <div class="category-section-content">
+    
+      <div class="category-section-grid">
+        <div class="category-section-item">
+          <img src="chairsoft.jpg" alt="Soft chairs">
+          <div class="item-title">Soft chairs</div>
+          <div class="item-sub">USD 19</div>
+        </div>
+        <div class="category-section-item">
+          <img src="sofa.jpg" alt="Sofa & chair">
+          <div class="item-title">Sofa & chair</div>
+          <div class="item-sub">USD 19</div>
+        </div>
+        <div class="category-section-item">
+          <img src="appliance.jpg" alt="Kitchen dishes">
+          <div class="item-title">Kitchen dishes</div>
+          <div class="item-sub">USD 19</div>
+        </div>
+        <div class="category-section-item">
+          <img src="smartwaatch.jpeg" alt="Smart watches">
+          <div class="item-title">Smart watches</div>
+          <div class="item-sub">USD 19</div>
+        </div>
+        <div class="category-section-item">
+          <img src="juicer.jpg" alt="Kitchen mixer">
+          <div class="item-title">Kitchen mixer</div>
+          <div class="item-sub">USD 100</div>
+        </div>
+        <div class="category-section-item">
+          <img src="blender.jpg" alt="Blenders">
+          <div class="item-title">Blenders</div>
+          <div class="item-sub">USD 39</div>
+        </div>
+        <div class="category-section-item">
+          <img src="appliance.jpg" alt="Home appliance">
+          <div class="item-title">Home appliance</div>
+          <div class="item-sub">USD 19</div>
+        </div>
+        <div class="category-section-item">
+          <img src="coffe.jpg" alt="Coffee maker">
+          <div class="item-title">Coffee maker</div>
+          <div class="item-sub">USD 10</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Consumer Electronics and Gadgets -->
+        <section class="category-section">
+  <div class="container category-section-container">
+    <div class="category-section-header">
+      <span class="category-section-title">Consumer electronics and gadgets</span>
+      <a href="#" class="category-section-link">Source now</a>
+    </div>
+    <div class="category-section-content">
+    <div class="category-section-image">
+        <img src="ellect.jpeg" alt="Consumer electronics">
+      </div>
+      <div class="category-section-grid">
+        <div class="category-section-item">
+          <img src="smartwaatch.jpeg" alt="Smart watches">
+          <div class="item-title">Smart watches</div>
+          <div class="item-sub">USD 19</div>
+        </div>
+        <div class="category-section-item">
+          <img src="goprocamera.jpeg" alt="Cameras">
+          <div class="item-title">Cameras</div>
+          <div class="item-sub">USD 89</div>
+        </div>
+        <div class="category-section-item">
+          <img src="headphones.jpeg" alt="Headphones">
+          <div class="item-title">Headphones</div>
+          <div class="item-sub">USD 10</div>
+        </div>
+        <div class="category-section-item">
+          <img src="smartwaatch.jpeg" alt="Smart watches">
+          <div class="item-title">Smart watches</div>
+          <div class="item-sub">USD 90</div>
+        </div>
+        <div class="category-section-item">
+          <img src="gaaming.jpeg" alt="Gaming set">
+          <div class="item-title">Gaming set</div>
+          <div class="item-sub">USD 35</div>
+        </div>
+        <div class="category-section-item">
+          <img src="lapptop.jpeg" alt="Laptops & PC">
+          <div class="item-title">Laptops & PC</div>
+          <div class="item-sub">USD 340</div>
+        </div>
+        <div class="category-section-item">
+          <img src="canon.jpeg" alt="Smartphones">
+          <div class="item-title">Smartphones</div>
+          <div class="item-sub">USD 18</div>
+        </div>
+        <div class="category-section-item">
+          <img src="kket.jpeg" alt="Electric kettle">
+          <div class="item-title">Electric kettle</div>
+          <div class="item-sub">USD 240</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Supplier Request Section -->
+        <section class="supplier-request-section">
+  <div class="container supplier-request-container">
+    <div class="supplier-request-bg">
+      <div class="supplier-request-info">
+        <div class="supplier-request-title">An easy way to send requests to all suppliers</div>
+        <div class="supplier-request-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+      </div>
+      <form class="supplier-request-form">
+        <div class="form-title">Send quote to suppliers</div>
+        <input type="text" class="form-input" placeholder="What item you need?">
+        <textarea class="form-input" placeholder="Type more details"></textarea>
+        <div class="form-row">
+          <input type="number" class="form-input" placeholder="Quantity">
+          <select class="form-input">
+            <option>Pcs</option>
+            <option>Box</option>
+            <option>Carton</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary">Send inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+        <!-- Recommended Items Section -->
+        <section class="recommended">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-title">Recommended items</span>
+                </div>
+                <div class="recommended-grid">
+                    <div class="recommended-card">
+                        <img src="1.jpg" alt="T-shirts" class="deal-image">
+                        <div class="deal-title">$10.30</div>
+                        <div class="deal-price">T-shirts with multiple colors, for men</div>
+                    </div>
+                    <div class="recommended-card">
+                        <img src="2.jpg" alt="Jeans shorts" class="deal-image">
+                        <div class="deal-title">$10.30</div>
+                        <div class="deal-price">Jeans shorts for men blue color</div>
+                    </div>
+                    <div class="recommended-card">
+                        <img src="3.jpg" alt="Winter coat" class="deal-image">
+                        <div class="deal-title">$12.50</div>
+                        <div class="deal-price">Brown winter coat medium size</div>
+                    </div>
+                    <div class="recommended-card">
+                        <img src="4.jpg" alt="Wallet" class="deal-image">
+                        <div class="deal-title">$34.00</div>
+                        <div class="deal-price">Jeans bag for travel for men</div>
+                    </div>
+                    <div class="recommended-card">
+                        <img src="5.jpg" alt="Leather wallet" class="deal-image">
+                        <div class="deal-title">$99.00</div>
+                        <div class="deal-price">Leather wallet</div>
+                    </div>
+                    <div class="recommended-card">
+                        <img src="6.jpg" alt="Shorts" class="deal-image">
+                        <div class="deal-title">$9.99</div>
+                        <div class="deal-price">Canon camera black, 100x zoom</div>
+                    </div>
+                    <div class="recommended-card">
+                        <img src="Headset.jpeg" alt="Headset" class="deal-image">
+                        <div class="deal-title">$8.99</div>
+                        <div class="deal-price">Headset for gaming with mic</div>
+                    </div>
+                    <div class="recommended-card">
+                        <img src="smartwaatch.jpeg" alt="Smartwatch" class="deal-image">
+                        <div class="deal-title">$10.30</div>
+                        <div class="deal-price">Smartwatch silver color modern</div>
+                    </div>
+                    <div class="recommended-card">
+                        <img src="7.jpg" alt="Jeans bag" class="deal-image">
+                        <div class="deal-title">$10.30</div>
+                        <div class="deal-price">Blue wallet for men leather metarial</div>
+                    </div>
+                    <div class="recommended-card">
+                        <img src="kket.jpeg" alt="Kettle" class="deal-image">
+                        <div class="deal-title">$80.95</div>
+                        <div class="deal-price">Jeans bag for travel for men</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" style="background: #f7f7fa; padding-bottom: 0;">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 10px;">
+                    <span class="section-title" style="font-size: 1.1rem; font-weight: 500;">Our extra services</span>
+                </div>
+                <div class="services-grid" style="gap: 16px;">
+                    <div class="service-card" style="flex-direction: column; align-items: flex-start;">
+                        <img src="1.svg" alt="Source from Industry Hubs" class="service-icon" style="margin-bottom: 10px;">
+                        <div class="service-content">
+                            <h3 style="margin-bottom: 0; font-size: 1rem;">Source from Industry Hubs</h3>
+                        </div>
+                    </div>
+                    <div class="service-card" style="flex-direction: column; align-items: flex-start;">
+                        <img src="2.svg" alt="Customize Your Products" class="service-icon" style="margin-bottom: 10px;">
+                        <div class="service-content">
+                            <h3 style="margin-bottom: 0; font-size: 1rem;">Customize Your Products</h3>
+                        </div>
+                    </div>
+                    <div class="service-card" style="flex-direction: column; align-items: flex-start;">
+                        <img src="3.svg" alt="Fast, reliable shipping by ocean or air" class="service-icon" style="margin-bottom: 10px;">
+                        <div class="service-content">
+                            <h3 style="margin-bottom: 0; font-size: 1rem;">Fast, reliable shipping<br>by ocean or air</h3>
+                        </div>
+                    </div>
+                    <div class="service-card" style="flex-direction: column; align-items: flex-start;">
+                        <img src="4.svg" alt="Product monitoring and inspection" class="service-icon" style="margin-bottom: 10px;">
+                        <div class="service-content">
+                            <h3 style="margin-bottom: 0; font-size: 1rem;">Product monitoring<br>and inspection</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Suppliers by Region Section -->
+        <section class="suppliers-region" style="background: #f7f7fa; padding-top: 0;">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 10px;">
+                    <span class="section-title" style="font-size: 1.1rem; font-weight: 500;">Suppliers by region</span>
+                </div>
+                <div class="region-grid" style="gap: 12px;">
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="AE.svg" alt="Arabic Emirates" class="region-flag">
+                        <span style="margin-left: 8px;">Arabic Emirates</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">shopname.ae</div>
+                    </div>
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="AU.svg" alt="Australia" class="region-flag">
+                        <span style="margin-left: 8px;">Australia</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">shopname.au</div>
+                    </div>
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="US.svg" alt="United States" class="region-flag">
+                        <span style="margin-left: 8px;">United States</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">shopname.us</div>
+                    </div>
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="RU.svg" alt="Russia" class="region-flag">
+                        <span style="margin-left: 8px;">Russia</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">shopname.ru</div>
+                    </div>
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="IT.svg" alt="Italy" class="region-flag">
+                        <span style="margin-left: 8px;">Italy</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">shopname.it</div>
+                    </div>
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="DK.svg" alt="Denmark" class="region-flag">
+                        <span style="margin-left: 8px;">Denmark</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">denmark.com.dk</div>
+                    </div>
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="FR.svg" alt="France" class="region-flag">
+                        <span style="margin-left: 8px;">France</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">shopname.com.fr</div>
+                    </div>
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="AE.svg" alt="Arabic Emirates" class="region-flag">
+                        <span style="margin-left: 8px;">Arabic Emirates</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">shopname.ae</div>
+                    </div>
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="CN.svg" alt="China" class="region-flag">
+                        <span style="margin-left: 8px;">China</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">shopname.cn</div>
+                    </div>
+                    <div class="region-card" style="box-shadow: none; border: none; background: none; padding: 0; text-align: left;">
+                        <img src="GB.svg" alt="Great Britain" class="region-flag">
+                        <span style="margin-left: 8px;">Great Britain</span>
+                        <div style="font-size: 0.8rem; color: #8B96A5; margin-left: 28px;">shopname.co.uk</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section" style="background: #f7f7fa; padding: 32px 0 0 0;">
+            <div class="container" style="max-width: 700px;">
+                <div class="newsletter-content" style="text-align: center;">
+                    <div class="section-header" style="margin-bottom: 8px;">
+                        <span class="section-title" style="font-size: 1rem; font-weight: 600;">Subscribe on our newsletter</span>
+                    </div>
+                    <p style="color: #8B96A5; font-size: 0.95rem; margin-bottom: 18px;">
+                        Get daily news on upcoming offers from many suppliers all over the world
+                    </p>
+                    <form class="newsletter-form" style="display: flex; justify-content: center; gap: 8px;">
+                        <input type="email" placeholder="Email" class="form-input" style="padding: 8px 12px; border-radius: 4px; border: 1px solid #DEE2E7; min-width: 220px;">
+                        <button type="submit" class="btn-primary" style="padding: 8px 24px;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer" style="background: #fff; border-top: 1px solid #DEE2E7; margin-top: 0;">
+            <div class="container" style="padding-top: 32px;">
+                <div class="footer-top" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start;">
+                    <div class="footer-logo" style="flex: 1 1 200px;">
+                        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 8px;">
+                            <img src="logo.svg" alt="Brand Logo" class="logo-icon" style="width: 36px; height: 36px;">
+                            <span style="font-weight: 600; font-size: 1.1rem;">Brand</span>
+                        </a>
+                        <div style="color: #8B96A5; font-size: 0.95rem; margin: 12px 0 8px 0;">
+                            Best information about the company<br>
+                            goes here but now lorem ipsum is
+                        </div>
+                       <div style="display: flex; gap: 8px; margin-top: 8px;">
+                            <a href="#"><img src="fb.svg" alt="Facebook" style="width: 20px;"></a>
+                            <a href="#"><img src="twitter.svg" alt="Twitter" style="width: 20px;"></a>
+                            <a href="#"><img src="linkedin.svg" alt="LinkedIn" style="width: 20px;"></a>
+                            <a href="#"><img src="insta.svg" alt="Instagram" style="width: 20px;"></a>
+                            <a href="#"><img src="youtube.svg" alt="YouTube" style="width: 20px;"></a>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex: 3 1 600px; gap: 48px; flex-wrap: wrap;">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">About</div>
+                            <div><a href="#">About Us</a></div>
+                            <div><a href="#">Find store</a></div>
+                            <div><a href="#">Categories</a></div>
+                            <div><a href="#">Blogs</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Partnership</div>
+                            <div><a href="#">About Us</a></div>
+                            <div><a href="#">Find store</a></div>
+                            <div><a href="#">Categories</a></div>
+                            <div><a href="#">Blogs</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Information</div>
+                            <div><a href="#">Help Center</a></div>
+                            <div><a href="#">Money Refund</a></div>
+                            <div><a href="#">Shipping</a></div>
+                            <div><a href="#">Contact us</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">For users</div>
+                            <div><a href="#">Login</a></div>
+                            <div><a href="#">Register</a></div>
+                            <div><a href="#">Settings</a></div>
+                            <div><a href="#">My Orders</a></div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 10px;">Get app</div>
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                                <a href="#"><img src="type=Appstore.svg" alt="App Store" style="height: 32px;"></a>
+                                <a href="#"><img src="type=Googleplay.svg" alt="Google Play" style="height: 32px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #DEE2E7; margin-top: 32px; padding: 16px 0 8px 0;">
+                    <p style="color: #8B96A5; font-size: 0.95rem;">&copy; 2025 Ecommerce.</p>
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <img src="us.svg" alt="English" style="width: 18px; height: 14px;">
+                        <span style="font-size: 0.95rem; color: #8B96A5;">English</span>
+                        <span style="font-size: 1.1rem; color: #8B96A5;">&#8964;</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+    </html>
